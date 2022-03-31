@@ -1,0 +1,49 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-size: 10px;
+    background-color: #e7e7e7;
+}
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+// global css
+a{
+    text-decoration: none;
+    color: unset;
+}
+ul{
+    padding: 0;
+    list-style-type: none;
+}
+button{
+    border:transparent;
+    padding: .5rem 1rem;
+    border-radius: .3rem;
+}
+img{
+    width: 100%;
+}
+
+// custom global css
+
+.container-fluid{
+    padding: 0;
+    margin: 0;
+    overflow-y: hidden;
+    max-width: 2048px;
+}
+
+.contianer{
+    padding: 5rem 10rem; // count for responsive mobile: 1rem | tablet 5rem | 1200 = 8rem 2048 14rem
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(10%,1fr)); //it will get same width 
+}
+.flex{
+    display: flex;
+}

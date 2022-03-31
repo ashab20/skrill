@@ -1,0 +1,58 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-size: 10px;
+  background-color: #e7e7e7;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+button {
+  border: transparent;
+  padding: .5rem 1rem;
+  border-radius: .3rem;
+}
+
+img {
+  width: 100%;
+}
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+  overflow-y: hidden;
+  max-width: 2048px;
+}
+
+.contianer {
+  padding: 5rem 10rem;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(10%, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(10%, 1fr));
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=styles.css.map */

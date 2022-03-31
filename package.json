@@ -1,0 +1,8 @@
+{
+  "name": "skill",
+  "version": "1.0.0",
+  "description": "this is a demo version of skrill. frontend only",
+  "main": "index.js",
+  "author": "Ashab Uddin",
+  "license": "MIT"
+}
