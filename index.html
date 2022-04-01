@@ -13,29 +13,161 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- link style sheets -->
-    <link rel="stylesheet" href="./dist/styles/styles.css" />
+    <link rel="stylesheet" href="dist/css/styles.css" />
+
+    <script
+      src="https://kit.fontawesome.com/67de9ff8a4.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="dist/css/all.min.css" />
 
     <title>Skrill | Home Page</title>
   </head>
   <body>
-      <!-- header -->
-      <header>
-          <div class="logo">
-              <img src="" alt="">
+    <!--*** header ***-->
+    <header class="header">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="Logo" />
+      </div>
+      <menu class="flex menu">
+        
+        <a href="">Business</a>
+        <a 
+        onclick="langInOut()"
+        href="#" class="flex">
+              <i class="fa-solid fa-globe"></i>
+              <i class="fa-solid fa-angle-down iBtn"></i>
+        </a>
+        <a href="#"> 
+            <i class="fa-regular fa-circle-question"></i> 
+               Help
+        </a> 
+         <a href="#">
+                <i class="fa-regular fa-circle-user hide"></i> Log in
+        </a>
+         <a href="#" class="btn">Register</a></li>
+         <a href="#" onclick="menu()">
+            <i  class="fa-solid fa-bars fa-xl bar"></i>
+            <i class="fa-solid fa-xmark fa-2xl cross"></i>
+      </menu>
+    </header>
+    
+    <!-- *** Choose Language*** -->
+    <section class="contianer lang">
+      <div class="title">
+        <h3>Choose Your Language</h3>
+      </div>
+      <ul>
+        <li class="active">
+          <i class="fa-solid fa-caret-right active"></i>      
+          <a href="#">English</a>
+        </li>
+        <li><a href="">Deutsch</a></li>
+        <li><a href="">Français</a></li>
+        <li><a href="">Español</a></li>
+        <li><a href="">Italiano</a></li>
+        <li><a href="">Polski</a></li>
+        <li><a href="">Ελληνικά</a></li>
+        <li><a href="">Русский</a></li>
+        <li><a href="">中文</a></li>
+        <li><a href="">Český</a></li>
+        <li><a href="">USA - Español</a></li>
+        <li><a href="">USA - English</a></li>
+        <li><a href="">India - English</a></li>
+        <li><a href="">Português</a></li>
+      </ul>
+    </section>
+    <!-- *** MENU *** -->
+    <section class="container mainMenu">
+      <div>
+        <!-- Menu -->     
+        <ul>
+          <li >
+            <a 
+            onclick="send()" href="#" class="active"
+            >
+              Send
+            </a>
+            <ul class="send">
+              <li><a href="#">Transfer Money</a></li>
+              <li><a href="#">International Money Transfer</a></li>
+              <li><a href="#">Recive Money</a></li>
+              <li><a href="#">Fees</a></li>
+              <li><a href="#">How to Send Money</a></li>
+            </ul>
+          </li>
+          <li>
+            <a onclick="spend()" href="#">Spend</a>
+            <ul class="spend">
+              <li><a href="#">Pay Online</a></li>
+              <li><a href="#">Bet Online</a></li>
+              <li><a href="#">Forex</a></li>
+              <li><a href="#">Fees</a></li>
+              <li><a href="#">Game Online</a></li>
+              <li><a href="#">Sport Corner</a></li>
+              <li><a href="#">How to Pay</a></li>
+            </ul>
+          </li>
+          <li>
+            <a 
+            onclick="crypto()"  
+            href="#">Crypto</a>
+            <ul class="crypto">
+              <li><a href="#">Buy and Sell crypto</a></li>
+              <li><a href="#">How to works</a></li>
+              <li><a href="#">Cryto withdrawals</a></li>
+              <li><a href="#">Fees</a></li>
+              <li><a href="#">Cryto guid</a></li>
+              <li><a href="#">Live rates</a></li>
+            </ul>
+          </li>
+          <li><a 
+            onclick="loyalty()"  
+            href="#">Loyalty</a>
+            <ul class="loyalty">
+              <li><a href="#">Srill Knect</a></li>
+              <li><a href="#">Account levels</a></li>
+              <li><a href="#">VOP programme</a></li>
+              <li><a href="#">Affiliates</a></li>
+            </ul>
+          </li>
+          <li><a href="#">News</a></li>
+        </ul>      
+        <div class="owner">
+          <div> 
+            <img src="https://www.skrill.com/fileadmin/Personal/Arrow_gifs/Refer_a_friend_SMT.svg" alt="offer">
+            <span>
+              <h4>
+                Exclusive Offes
+              </h4>
+              <p>Get great deals from your favourite sites.</p>
+            </span>
           </div>
-          <menu>
-              <ul class="items">
-                  <li class="item"><a href=""></a></li>
-                  <li class="item"><a href=""></a></li>
-                  <li class="item"><a href=""></a></li>
-                  <li class="item"><a href=""></a></li>
-                  <li class="item"><a href=""></a></li>
-                  <li class="item"><a href=""></a></li>
-              </ul>
-          </menu>
-      </header>
-  </body>
+          <div>
+            <h4>
+              Premium Partner  
+            </h4>
+             <img src="https://www.skrill.com/fileadmin/content/images/AC_Milan_Logo-02.svg" alt="Global Payment">
+          </div>
+        </div>
+      </div>
+      <hr style="width: 75%;border: 1px solid #e9e5e5;"/>
+      <div class="mainBottom">
+        <div>
+          <a href="#">Registraition</a>
+        </div>
+        <div>
+          <img src="./images/google_play.png" alt="google play" width="50%">
+          <img src="./images/apple.jpg" alt="apple stor" width="50%">
+        </div>
+      </div>
 
+    </section>
+
+
+    <script src="./dist/js/jquery_v3.6.js"></script>
+    <script src="./dist/js/app.js"></script>
+  </body>
   <!--? script -->
-  <script src="./dist/js/jquery_v3.6.js"></script>
 </html>

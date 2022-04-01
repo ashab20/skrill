@@ -1,0 +1,397 @@
+// fonts Aeonik
+@font-face {
+  font-family: "Aeonik";
+  src: url("../webfonts/Aeonik-Regular.otf");
+}
+
+$Aeonik: "Aeonik";
+$Aeonik-bold: "Aeonik-Bold";
+
+/* ? VARIABLE COLOR  */
+
+// css color variable from skrill website
+$color: #502455;
+$color-bg: #fff;
+$color-white: #fff;
+$color-purple: #4f2455;
+$color-purple-10: #e8e3e9;
+$color-purple-30: #c7b9c9;
+$color-purple-30: #886e8c;
+$color-purple-light: #886e8c;
+$color-dark-purple: #1c001e;
+$color-teal: #28cfd4;
+$color-violet: #872166;
+$color-deep-blue: #00506c;
+$color-coral: #ff5073;
+$purple-gradient: linear-gradient(
+  45deg,
+  var($color-violet),
+  var($color-purple)
+);
+$purple-dark-gradient: linear-gradient(
+  0deg,
+  var($color-purple),
+  var($color-dark-purple)
+);
+
+// $shadow: 0 0.5rem 1rem 0 rgb(79 36 85 / 15%);
+
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  font-size: 10px; //it will effect every 1 rem = 10px
+  background-color: $color-bg;
+  height: auto;
+  font-family: $Aeonik;
+}
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+// global css
+a {
+  text-decoration: none;
+  color: unset;
+}
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+button {
+  border: transparent;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+}
+.btn {
+  border-radius: 0.5rem;
+  padding: 0.8rem 4rem;
+  background-color: $color-violet;
+  color: $color-white;
+  font-family: $Aeonik;
+}
+img {
+  width: 100%;
+}
+
+// custom global css
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+  overflow-y: hidden;
+  max-width: 2048px;
+}
+
+.contianer {
+  max-width: 1920px;
+
+  @media screen and (max-width: 1500px) {
+  }
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(10%, 1fr)
+  ); //it will get same width
+}
+.flex {
+  display: flex;
+}
+
+// Headear
+.header {
+  width: 100%;
+  height: 7rem;
+  padding: 0.3rem 4rem;
+  margin: -3px;
+  position: sticky;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+  justify-content: space-between;
+  align-items: center;
+  // box-shadow: 0 0.5rem 1rem 0 rgb(79 36 85 / 15%);
+
+  @media screen and (max-width: 900px) {
+    padding: 0rem;
+    height: 6rem;
+  }
+  .logo {
+    width: 6rem;
+    text-align: start;
+    // height: 10rem;
+
+    @media screen and (max-width: 900px) {
+      text-align: center;
+      width: 6rem;
+      margin-left: 5rem;
+    }
+  }
+  // Menu
+  .menu {
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(10%, 1fr));
+    align-items: center;
+    justify-content: end;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    font-family: $Aeonik;
+    font-weight: 600;
+    text-align: center;
+    color: $color;
+    @media screen and (max-width: 900px) {
+      margin: 0.5rem;
+      padding: 1rem;
+    }
+    a {
+      font-size: 1.6rem;
+      font-family: $Aeonik;
+      margin: 0 1rem;
+      word-spacing: 5px;
+      justify-content: center;
+      @media screen and (max-width: 900px) {
+        margin: 0 0.5rem;
+        font-size: 1.4rem;
+
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+          display: none;
+        }
+        .hide {
+          display: none;
+        }
+        @media screen and (max-width: 600px) {
+          &:last-child {
+            position: absolute;
+            left: 1rem;
+            margin-right: 1rem;
+          }
+        }
+      }
+      @media screen and (min-width: 901px) and (max-width: 1200px) {
+        &:nth-child(3),
+        &:nth-child(4) {
+          min-width: 8rem;
+        }
+      }
+      .cross {
+        display: none;
+        padding: 0 1px 0 0;
+      }
+    }
+    .btn {
+      @media screen and (max-width: 600px) {
+        // min-width: 12rem;
+        background: transparent;
+        color: $color;
+        padding: 0.5rem;
+      }
+    }
+  }
+}
+
+// Language
+.lang {
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  padding: 0 calc(50% - 1280px / 2);
+  display: none;
+  background-color: $color-bg;
+  // text-align: center;
+  // max-width: 60%;
+
+  .title {
+    padding: 0 1rem;
+    h3 {
+      font-size: 2rem;
+      font-family: $Aeonik;
+      font-weight: 600;
+      color: $color;
+    }
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19%, 1fr));
+    li {
+      padding: 0.5rem;
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: $color-purple-30;
+      margin: 0 0.5rem;
+      &:hover a {
+        color: $color;
+      }
+    }
+    .active {
+      display: flex;
+      float: right;
+      padding: 0.4rem;
+      a {
+        color: $color;
+      }
+    }
+  }
+}
+
+.iBtn {
+  font-size: 0.85em;
+  line-height: 1.08333em;
+  vertical-align: 1rem;
+  margin: 0 0.5rem;
+}
+
+// Main menu
+
+.mainMenu {
+  display: none;
+div{
+  background-color: $color-bg;
+  position: relative;
+  width: 100%;
+  margin: 5 auto;
+  justify-content: center;
+  // align-items: center;
+  padding: 3rem calc(50% - 1280px / 2);
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+  z-index: 10;
+  
+  @media screen and (max-width:600px){
+    grid-template-columns: repeat(auto-fit,minmax(80%,1fr));
+    
+  }
+
+  ul {
+    
+    li {
+      font-size: 1.6rem;
+      padding: 0.3rem 1rem;
+      color: $color-purple-30;
+
+      a {
+        font-size: 2.5rem;
+        font-weight: 600;
+
+        @media screen and (max-width: 900px) {
+          font-size: 2rem;
+        }
+        &:hover {
+          border-bottom: 2px solid teal;
+          color: $color;
+          // animation: border 2s;
+        }
+      }
+      ul {
+        display: none;
+        padding: 0 5rem;
+      }
+
+      a.active {
+        border-bottom: 2px solid lightgreen;
+        color: $color;
+}
+        ul {
+          // display: block;
+          
+          li {
+            
+            a{
+              font-size: 1.7rem;
+              font-weight: 700;
+              color: $color;
+          }
+        }
+
+          @media screen and (min-width: 500px) {
+            width: 50%;
+            // text-align: center;
+            justify-content: center;
+            left: 30%;
+            top: 10%;
+            // bottom: 0;
+            margin: 0 auto;
+            position: absolute;
+            
+          }
+        }
+      
+    }
+  }
+
+// ? owner
+
+.owner{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  position: relative;
+  padding: 3rem 1rem;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+
+  div:nth-child(1){
+    background-color: #ddd;
+    width: 60%;
+    display: flex;
+    width: 100%;
+    border-radius: .3rem;
+    
+    img{
+      width: clamp(5rem,50%,10rem);
+    }
+    span{
+      padding: .5rem 1rem;
+      h4{
+        font-size: 1.6rem;
+        color: $color;
+        font-family: $Aeonik;
+      }
+      p{
+        font-size: 1.4rem;
+        color: $color-purple;
+      }
+    }
+  }
+  div:nth-child(2){
+    width: 100%;
+    display: flex;
+    padding: 3rem 0;
+    h4{
+      // float: left;
+      padding: .5rem;
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+    img{
+      width: clamp(10rem,50%,20rem);
+    }
+  }
+}
+}
+.mainBottom{
+  div{a{
+    font-size: 1.6rem;
+    color: #1c001e;
+    border-bottom: 2px solid teal;
+    width: 20%;
+    padding: 0.5rem 0;
+  }
+}
+  div{
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    img{
+      width: 80%;
+    }
+  }
+}
+}

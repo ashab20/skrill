@@ -1,0 +1,415 @@
+@font-face {
+  font-family: "Aeonik";
+  src: url("../webfonts/Aeonik-Regular.otf");
+}
+
+/* ? VARIABLE COLOR  */
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  font-size: 10px;
+  background-color: #fff;
+  height: auto;
+  font-family: "Aeonik";
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+button {
+  border: transparent;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+}
+
+.btn {
+  border-radius: 0.5rem;
+  padding: 0.8rem 4rem;
+  background-color: #872166;
+  color: #fff;
+  font-family: "Aeonik";
+}
+
+img {
+  width: 100%;
+}
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+  overflow-y: hidden;
+  max-width: 2048px;
+}
+
+.contianer {
+  max-width: 1920px;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(10%, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(10%, 1fr));
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header {
+  width: 100%;
+  height: 7rem;
+  padding: 0.3rem 4rem;
+  margin: -3px;
+  position: -webkit-sticky;
+  position: sticky;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(45%, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    padding: 0rem;
+    height: 6rem;
+  }
+}
+
+.header .logo {
+  width: 6rem;
+  text-align: start;
+}
+
+@media screen and (max-width: 900px) {
+  .header .logo {
+    text-align: center;
+    width: 6rem;
+    margin-left: 5rem;
+  }
+}
+
+.header .menu {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  font-family: "Aeonik";
+  font-weight: 600;
+  text-align: center;
+  color: #502455;
+}
+
+@media screen and (max-width: 900px) {
+  .header .menu {
+    margin: 0.5rem;
+    padding: 1rem;
+  }
+}
+
+.header .menu a {
+  font-size: 1.6rem;
+  font-family: "Aeonik";
+  margin: 0 1rem;
+  word-spacing: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+  .header .menu a {
+    margin: 0 0.5rem;
+    font-size: 1.4rem;
+  }
+  .header .menu a:nth-child(1), .header .menu a:nth-child(2), .header .menu a:nth-child(3) {
+    display: none;
+  }
+  .header .menu a .hide {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) and (max-width: 600px) {
+  .header .menu a:last-child {
+    position: absolute;
+    left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  .header .menu a:nth-child(3), .header .menu a:nth-child(4) {
+    min-width: 8rem;
+  }
+}
+
+.header .menu a .cross {
+  display: none;
+  padding: 0 1px 0 0;
+}
+
+@media screen and (max-width: 600px) {
+  .header .menu .btn {
+    background: transparent;
+    color: #502455;
+    padding: 0.5rem;
+  }
+}
+
+.lang {
+  width: 100%;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 calc(50% - 1280px / 2);
+  display: none;
+  background-color: #fff;
+}
+
+.lang .title {
+  padding: 0 1rem;
+}
+
+.lang .title h3 {
+  font-size: 2rem;
+  font-family: "Aeonik";
+  font-weight: 600;
+  color: #502455;
+}
+
+.lang ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(19%, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(19%, 1fr));
+}
+
+.lang ul li {
+  padding: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #886e8c;
+  margin: 0 0.5rem;
+}
+
+.lang ul li:hover a {
+  color: #502455;
+}
+
+.lang ul .active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+}
+
+.lang ul .active a {
+  color: #502455;
+}
+
+.iBtn {
+  font-size: 0.85em;
+  line-height: 1.08333em;
+  vertical-align: 1rem;
+  margin: 0 0.5rem;
+}
+
+.mainMenu {
+  display: none;
+}
+
+.mainMenu div {
+  background-color: #fff;
+  position: relative;
+  width: 100%;
+  margin: 5 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3rem calc(50% - 1280px / 2);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 8fr 4fr;
+      grid-template-columns: 8fr 4fr;
+  z-index: 10;
+}
+
+@media screen and (max-width: 600px) {
+  .mainMenu div {
+    -ms-grid-columns: (minmax(80%, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(80%, 1fr));
+  }
+}
+
+.mainMenu div ul li {
+  font-size: 1.6rem;
+  padding: 0.3rem 1rem;
+  color: #886e8c;
+}
+
+.mainMenu div ul li a {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 900px) {
+  .mainMenu div ul li a {
+    font-size: 2rem;
+  }
+}
+
+.mainMenu div ul li a:hover {
+  border-bottom: 2px solid teal;
+  color: #502455;
+}
+
+.mainMenu div ul li ul {
+  display: none;
+  padding: 0 5rem;
+}
+
+.mainMenu div ul li a.active {
+  border-bottom: 2px solid lightgreen;
+  color: #502455;
+}
+
+.mainMenu div ul li ul li a {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #502455;
+}
+
+@media screen and (min-width: 500px) {
+  .mainMenu div ul li ul {
+    width: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    left: 30%;
+    top: 10%;
+    margin: 0 auto;
+    position: absolute;
+  }
+}
+
+.mainMenu div .owner {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 0;
+  position: relative;
+  padding: 3rem 1rem;
+  text-align: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mainMenu div .owner div:nth-child(1) {
+  background-color: #ddd;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border-radius: .3rem;
+}
+
+.mainMenu div .owner div:nth-child(1) img {
+  width: clamp(5rem, 50%, 10rem);
+}
+
+.mainMenu div .owner div:nth-child(1) span {
+  padding: .5rem 1rem;
+}
+
+.mainMenu div .owner div:nth-child(1) span h4 {
+  font-size: 1.6rem;
+  color: #502455;
+  font-family: "Aeonik";
+}
+
+.mainMenu div .owner div:nth-child(1) span p {
+  font-size: 1.4rem;
+  color: #4f2455;
+}
+
+.mainMenu div .owner div:nth-child(2) {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3rem 0;
+}
+
+.mainMenu div .owner div:nth-child(2) h4 {
+  padding: .5rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.mainMenu div .owner div:nth-child(2) img {
+  width: clamp(10rem, 50%, 20rem);
+}
+
+.mainMenu .mainBottom div a {
+  font-size: 1.6rem;
+  color: #1c001e;
+  border-bottom: 2px solid teal;
+  width: 20%;
+  padding: 0.5rem 0;
+}
+
+.mainMenu .mainBottom div {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainMenu .mainBottom div img {
+  width: 80%;
+}
+/*# sourceMappingURL=styles.css.map */
