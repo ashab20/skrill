@@ -507,12 +507,19 @@ font-size: 3rem;
         @media screen and (max-width:700px) {
           padding: 5%;
         }
+        @media screen and (min-width:700px)  and (min-width:1200px) {
+          padding: 10%;
+        }
         
 
         .title{
           font-family: $Aeonik-bold;
           font-size: 4rem;
           color: $color-violet;
+
+          @media screen and (max-width:900px) {
+            font-size: 3rem;
+          }
         }
         .sub-title{
           font-family: $Aeonik-bold;
@@ -577,6 +584,10 @@ font-size: 3rem;
       span {
         font-size: 3.5rem;
         color: $color;
+
+        @media screen and (max-width:500px) {
+          display: none;
+        }
       }
       .btn-hero {
         margin: 1rem;
@@ -702,7 +713,7 @@ font-size: 3rem;
   // padding: 8% !important;
   position: relative;
   width: 100%;
-  margin-top: 10rem;
+  margin: 10% 0;
   // display: flex;
   .wallet-content {
     background-color: #e8e3e9;
@@ -746,7 +757,8 @@ font-size: 3rem;
 
 // ! *** DOWNLOAD ***
 .download {
-  margin: 10rem 0;
+  margin: 10% 0;
+  height: 100vh;
   // padding: 8% !important;
   position: relative;
   width: 100%;
@@ -843,7 +855,14 @@ font-size: 3rem;
     background-color: #e8e3e9;
   }
   
-  @media screen and (max-width:700px) {
+  .knect-img{
+    height: 100%;
+justify-content: center;
+justify-items: center;
+display: grid;
+align-items: center;
+  }
+  @media screen and (max-width:900px) {
     margin: 5rem 0;
     grid-template-columns: repeat(auto-fit,minmax(60%,1fr));
 
@@ -962,8 +981,10 @@ width: 100%;
   text-align: center;
   display: flex;
   justify-content: space-around;
-  height: 6rem;
-
+  height: clamp(5rem,6rem,7rem);
+@media screen and (max-width:600px) {
+  height: 8rem;
+}
   .sub-title{
     padding: .3rem;
   }
