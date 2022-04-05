@@ -2,7 +2,7 @@
 ? Title: 'Home Page'
 * Description: 'skrill home page' 
 ! Author: 'Ashab Uddin'
-* Contact: 'ashabuddin34@gmail.com'
+* Contact: ''
 * Date: '31/03/2022'
 -->
 <!DOCTYPE html>
@@ -19,13 +19,18 @@
       src="https://kit.fontawesome.com/67de9ff8a4.js"
       crossorigin="anonymous"
     ></script>
-    <!-- font awesome cdn -->
-    <link rel="stylesheet" href="dist/css/all.min.css" />
 
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="dist/css/fontawesome.min.css" />
+
+    <!-- owl curosur -->
+  <link rel="stylesheet" href="./dist/vendor/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./dist/vendor/css/owl.theme.default.min.css">
     <title>Skrill | Home Page</title>
   </head>
   <body>
-    <!--*** header ***-->
+
+<!--*** header ***-->
     <header class="header">
       <div class="logo">
         <img src="./images/logo.svg" alt="Logo" />
@@ -53,7 +58,7 @@
       </menu>
     </header>
     
-    <!-- *** Choose Language*** -->
+<!-- *** Choose Language*** -->
     <section class="contianer lang">
       <div class="title">
         <h3>Choose Your Language</h3>
@@ -78,7 +83,8 @@
         <li><a href="">Português</a></li>
       </ul>
     </section>
-    <!-- *** MENU *** -->
+
+<!-- *** MENU *** -->
     <section class="container mainMenu">
       <div>
         <!-- Menu -->     
@@ -158,15 +164,322 @@
           <a href="#">Registraition</a>
         </div>
         <div>
-          <img src="./images/google_play.png" alt="google play" width="50%">
+          <img src="./images/google_app.png" alt="google play" width="50%">
           <img src="./images/apple.jpg" alt="apple stor" width="50%">
         </div>
       </div>
 
     </section>
 
+<!--! *** SLIDER *** -->
+
+<section class="container slide">
+    <div class="slider">
+         <div class="owl-carousel owl-theme ">
+           <!-- slider -->
+            <div class="item slider-content" data-hash="zero">
+              <div class="slider-image">
+                <picture>
+                  <source  srcset="./images/slider_image-1.webp" type="image/webp">
+                  <img src="./images/slider_image-1.webp" type="image/webp" alt="image-1">
+                </picture>
+              </div>
+              <div class="slider-text">
+                <p class="sub-title">Make it. Move it. Send it. Spend it</p>
+                <h2 class="title">
+                  Instant, secure money transfers to and from your trading platform.
+                </h2>
+                <button type="button" class="open-btn">Get Started</button>
+              </div>
+            </div>
+
+            <div class="item slider-content" data-hash="one" data="one">
+              <div class="slider-image">
+                <picture>
+                  <source  srcset="./images/slider_image-1.webp" type="image/webp">
+                  <img src="./images/slider_image-2.webp" type="image/webp" alt="image-1">
+                </picture>
+              </div>
+              <div class="slider-text">
+                <p class="sub-title">Make it. Move it. Send it. Spend it</p>
+                <h2 class="title">
+                  Transfer money for free to a bank account overseas
+                </h2>
+                <button type="button" class="open-btn">
+                  See Our Rates
+                </button>
+              </div>
+              
+            </div>
+             <div class="item slider-content" data-hash="two">
+              
+              <div class="slider-image">
+                <picture>
+                  <!-- <source  srcset="./images/slider_image-1.webp" type="image/webp"> -->
+                  <img src="./images/slider_image-3.webp" type="image/webp" alt="image-1">
+                </picture>
+              </div>
+              <div class="slider-text">
+                <p class="sub-title">Make it. Move it. Send it. Spend it</p>
+                <h2 class="title">
+                  Wherever you are in the world: get paid in seconds
+                </h2>
+                <button type="button" class="open-btn"> Started</button>
+              </div>
+              
+            </div>
+             <div class="item slider-content" data-hash="three" data="three">
+              
+              <div class="slider-image">
+                <picture>
+                  <!-- <source  srcset="./images/slider_image-1.webp" type="image/webp"> -->
+                  <img src="./images/slider_image-4.webp" type="image/webp" alt="image-1">
+                </picture> 
+              </div>
+              <div class="slider-text">
+                <p class="sub-title">Make it. Move it. Send it. Spend it</p>
+                <h2 class="title">
+                  Make connections. Move money. Be rewarded.
+                </h2>
+                <button type="button" class="open-btn">Get Started</button>
+              </div>
+              
+            </div>
+          </div>
+          <!-- button container -->
+          <div class="btn-container">
+            <a class="btn-hero zero active-btn" href="#zero" data-index="0">
+            <button >Play <br> Online</button>
+            </a> <span>/</span>
+            <a class="btn-hero one" href="#one" data-index="1">
+             <button>Send <br> Money</button>
+            </a><span>/</span>
+            <a class="btn-hero two" href="#two" data-index="2">
+              <button> Recive <br> Money</button>
+            </a> <span>/</span>
+            <a class="btn-hero three" href="#three" data-index="3">
+              <button>Loyalty <br> programme</button>
+            </a> 
+          </div>
+        </div>
+</section>
+
+<!--! *** sLIDER SECTION END *** -->
+
+
+<!-- *** send money *** -->
+
+<section class="container sendMoney">
+  <div class="info-text">
+    <h3 class="title">Send it, spend it and store it. </h3>
+      <p class="description">       
+        Managing your money with Skrill is easy – and safe. <br>
+     </p>
+     <p class="description"> 
+       Fund your account using a selection of deposit methods or receive money from friends, family and businesses. <br>
+      </p>
+      <p class="description"> 
+        Instantly access your Skrill balance to pay at 100s of sites or withdraw it to your bank account. 
+      </p>
+    <button type="button" class="open-btn">
+      Open a free Account
+    </button>
+  </div>
+  <div class="info-image">
+    <picture>
+      <img src="./images/send-money.webp" alt="info" width="100%">
+    </picture>
+  </div>
+
+</section>
+<!-- end send money -->
+
+<!-- *** wallet *** -->
+<section class="container wallet">
+  <div class="wallet-content">
+      <h2 class="title">
+        The online wallet for money movers and makers
+      </h2>
+      <p class="description">
+        Skrill has been helping to make it, send it and spend it for millions of customers since 2001.
+      </p>
+      <p class="description">
+        So wherever you are and whatever you want to do with your money, just skrill it.
+      </p>
+
+      <button type="button" class="open-btn">
+        Open a Skrill Account
+      </button>
+  </div>
+  <div class="wallet-image">
+    <picture>
+      <!-- <source media="(min-width: )" srcset=""> -->
+      <img src="./images/rider.webp" alt="rider">
+
+    </picture>
+  </div>
+</section>
+
+<!-- *** Download *** -->
+<section class="container download">
+  <div class="title">
+    <h3>
+      What our customers think
+    </h3>
+    <a href="#">Trustpilot
+    </a>
+  </div>
+  <div class="download-content">
+      <h2 class="download-title">
+        Download the app
+      </h2>
+      <p>   
+        Access your money no matter when, no matter where. Our fast and secure app lets you move your account balance 24/7, worldwide.
+      </p>
+      <div class="download-app">
+        <img src="./images/google_app.png" alt="google" height="50px">
+        <img src="./images/apple.jpg" alt="apple" height="50px">
+      </div>
+  </div>
+  <div class="download-image">
+    <picture>
+      <!-- <source media="(min-width: )" srcset=""> -->
+      <img src="./images/girl.webp" alt="girl">
+    </picture>
+  </div>
+</section>
+
+
+<!-- *** Knect *** -->
+<section class="container knect">
+  <div class="knect-img">
+    <picture>
+      <!-- <source media="(min-width: )" srcset=""> -->
+      <img src="./images/knect.webp" alt="knect">
+    </picture>
+  </div>
+  <div class="knect-content">
+    <h2 class="title">
+      Knect: The Skrill loyalty programme
+    </h2>
+    <p class="description">
+      Make connections, collect points and be rewarded. 
+    </p>
+    <p class="description">
+      Nearly all transactions will earn you points. Once you have enough, exchange them for cash rewards, bonuses and more. 
+    </p>
+
+    <button type="button" class="open-btn">
+      Join Knect
+    </button>
+  </div>
+</section>
+
+<!-- *** NEWS *** -->
+ <section class="container news">
+    <div class="latesnews owl-carousel owl-theme">
+      <div class="item news-content">
+      <div class="news-inner">
+        <h4 class="sub-title">
+          Latest news
+        </h4>
+        <h2 class="title">
+          Skrill joins forces with AC Milan
+        </h2>
+        <p class="description">
+          AC Milan has announced Skrill as its Official Global Payments Partner. Look forward to player interviews, giveaways and exclusive discounts from the AC Milan store.
+        </p>
+        <button type="button" class="open-btn">
+          Find out more
+        </button>
+      </div>
+      <div class="news-image">
+        <picture>
+          <!-- <source media="(min-width:465px)" srcset="./images/Ac-millon.webp"> -->
+          <img src="./images/Ac-millon.webp" alt="ac-millon" width="100%">
+        </picture>
+      </div>
+    </div>
+    <div class="item news-content">
+      <div class="news-inner">
+        <h4 class="sub-title">
+          Latest news
+        </h4>
+        <h2 class="title">
+          Skrill joins forces with AC Milan
+        </h2>
+        <p class="description">
+          You can now buy tickets to iconic sports and music events using your Skrill wallet.
+        </p>
+        
+      </div>
+      <div class="news-image">
+        <picture>
+          <!-- <source media="(min-width:465px)" srcset="./images/vivaticket.webp"> -->
+          <img src="./images/vivaticket.webp" alt="vivaticket" width="100%">
+
+        </picture>
+      </div>
+    </div>
+</div>
+</section> 
+
+
+<!-- *** primuim Parthner *** -->
+<section class="premium container-fluid">
+  <div>
+      <h2 class="title">
+        Premium Partner
+      </h2>
+    <img src="https://www.skrill.com/fileadmin/Personal/promotions/skrill-ac-milan/ACM_footer-banner-logo.svg" alt="premium" height="120px">
+  </div>
+</section>
+
+<!-- *** SECTION *** -->
+<section class="container footer">
+  <div class="footer-text">
+    <h2 class="title">
+      For money movers and makers
+    </h2>
+    <div class="social-icon">
+      <i class="fa-brands fa-facebook-square fa-2xl"></i>
+      <i class="fa-brands fa-instagram-square fa-2xl"></i>
+      <i class="fa-brands fa-twitter-square fa-2xl"></i>
+    </div>
+  </div>
+  <div class="footer-link ">
+<ul>
+      <li><a href="#">Fees</a></li>
+      <li><a href="#">Support</a></li>
+      <li><a href="#">Terms & Condition</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">PSD2 APIs</a></li>
+      <li><a href="#">Modern slavery act transparency statement </a></li>
+      <li><a href="#">Cookies notice </a></li>
+      <li><a href="#">Cookie Settings</a></li>
+    </ul>
+    <picture>
+      <img src="https://www.skrill.com/typo3conf/ext/theme2020/Resources/Public/images/icons/powered-by-paysafe.svg" alt="Paysafe">
+    </picture>
+  </div>
+  <div class="copyright">
+    <p class="description">
+      Copyright © 2022 Paysafe Holdings UK Limited. All rights reserved. Skrill Limited (FRN: 900001) is authorised by the Financial Conduct Authority under the Electronic Money Regulations 2011 for the issuing of electronic money and payment instruments. Skrill is a registered trademark of Skrill Limited. Paysafe Financial Services Limited (FRN: 900015) is authorised by the Financial Conduct Authority under the Electronic Money Regulations 2011 for the issuing of electronic money and payment instruments. Skrill Limited is registered with the Financial Conduct Authority as a cryptoasset firm under the Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017.
+    </p>
+  </div>
+  <!-- *** designer details ***-->
+</section>
+
+<div class="container-fluid me">
+  <h4 class="sub-title">
+     Design  	by  Ashab Uddin
+  </h4>
+  <p class="description"> &#91; &nbsp;A portfolio website not for reserve&nbsp; &#93;</p>
+</div>
+<!-- javascript external files -->
 
     <script src="./dist/js/jquery_v3.6.js"></script>
+    <script src="./dist/vendor/js/owl.carousel.min.js"></script>
     <script src="./dist/js/app.js"></script>
   </body>
   <!--? script -->

@@ -92,7 +92,7 @@ img {
   padding: 1rem 5rem;
 }
 .open-btn:hover {
-  background-color: rgb(245, 244, 237);
+  background-color: #f5f4ed;
 }
 
 .title {
@@ -225,7 +225,7 @@ img {
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-  padding: 0 calc(50% - 640px);
+  padding: 0 calc(50% - 1280px / 2);
   display: none;
   background-color: #fff;
   position: absolute;
@@ -281,7 +281,7 @@ img {
   width: 100%;
   margin: 5 auto;
   justify-content: center;
-  padding: 3rem calc(50% - 640px);
+  padding: 3rem calc(50% - 1280px / 2);
   display: grid;
   grid-template-columns: 8fr 4fr;
   z-index: 10;
@@ -796,5 +796,3 @@ img {
 .me .sub-title {
   padding: 0.3rem;
 }
-
-/*# sourceMappingURL=styles.css.map */
