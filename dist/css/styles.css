@@ -622,7 +622,7 @@ img {
 
 .download {
   margin: 10% 0;
-  height: 100vh;
+ /* height: 100vh; */
   position: relative;
   width: 100%;
 }
